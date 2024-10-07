@@ -1,0 +1,51 @@
+body {
+    background-color: #FFDAB9; 
+}
+
+h1{
+    font-size: 48px;
+    color: #FF8C69;
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.credits-header{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #ff4800;
+}
+.credit{
+    border: 1px solid #FF8C69;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+.credit div{
+    margin: 10px;
+    max-width: 100%;
+    color:#ff4800;
+}
+
+.credit-num{
+    font-size: 20px;
+    font-weight: bold;
+}
+.credit-url{
+    font-size: 10px;
+    width: 100%;
+}

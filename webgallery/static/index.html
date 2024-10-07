@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jerry's Web Gallery</title>
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <script type="module" src="js/index.mjs"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jerry's Web Gallery</h1>
+        <div class="toggle-form">
+            <button type="button" id="add-btn">Add Form</button>
+        </div>
+        <div class="add-form">
+            <form class="complex_form" id="add-image" >
+                <label for="title">Title:</label>
+                <input class="img-input" type="text" id="title" name="title" required>
+                
+                <label for="author">Author:</label>
+                <input class="img-input" type="text" id="author" name="author" required>
+                
+                <label for="picture">Image:</label>
+                <input type="file" id="picture" name="picture" class="form_element" required />
+
+                <button type="submit" id="submit-img">Submit</button>
+            </form>
+        </div>
+        <div class="picture-box">
+            <div class="count">0/0</div>
+            <div class="picture">
+                <div id="prev"></div>
+                <img id="main-image" src="">
+                <div id="next"></div>
+            </div>
+            <div class="description"></div>
+            <div class="author"></div>
+            <button type="button" id="delete-btn">Delete</button>
+        </div>
+        <div class="comments">
+            <div class="comment-section">
+                <div>Comments</div>
+            </div>
+            <div class="submit-comment">
+                <form action="/submit" method="post" id="comment-form">
+                    <input id="author-input" type="text" placeholder="Enter author here" required>
+                    <input id="comment-input" type="text" placeholder="Enter comment here" required>
+                    <button id="submit-comment-btn" type="submit">Post</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <a href="/credits.html">credits</a>
+        </footer>
+    </div>
+</body>
+</html>
